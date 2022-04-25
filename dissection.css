@@ -83,3 +83,7 @@ ol > li a:hover {
 li a:hover {
     background-color: #111;
 }
+
+div > img {
+    width:375px;
+}
