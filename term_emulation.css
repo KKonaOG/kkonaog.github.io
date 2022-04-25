@@ -1,0 +1,72 @@
+html  {
+    font-family: monospace;
+}
+
+body {
+    background:#000;
+    margin: 0px;
+    padding:0px;
+    overflow-x: hidden;
+    color: green;
+}
+
+term {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    border: 5px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+term > p {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+#term_dialog {
+    margin:0px;
+    width:100%;
+}
+
+label { 
+    margin: 5px;
+    border: 5px;
+    margin-right:0px;
+}
+
+#term_dialog_input {
+    border:none;
+    background:#000;
+    color:green;
+    border-radius:0px;
+    height:30px;
+    width:75%;
+    margin-top: -5px;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius:10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+  border-radius: 10px;}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
