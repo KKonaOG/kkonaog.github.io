@@ -38,7 +38,7 @@ label {
 
 #term_dialog_input {
     border:none;
-    background:#000;
+    background: none;
     color:green;
     border-radius:0px;
     height:30px;
