@@ -44,6 +44,7 @@ label {
     height:30px;
     width:75%;
     margin-top: -5px;
+    font-family: monospace;
 }
 
 :focus-visible {
