@@ -17,7 +17,7 @@ term_input.addEventListener("keydown", function(event) {
 
 
 function commands(cmd) {
-    term_output.innerHTML = term_output.innerHTML + "<p>local_user@kkonaog.github.io >" + cmd + "</p>";
+    term_output.innerHTML = term_output.innerHTML + "<p>local_user@kkonaog.github.io > " + cmd + "</p>";
     if (cmd == "help") {
         term_output.innerHTML = term_output.innerHTML + "<p>Commands: help, projects, clear</p>"
     } else if (cmd == "projects") {
