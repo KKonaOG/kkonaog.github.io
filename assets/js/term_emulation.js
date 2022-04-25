@@ -17,11 +17,11 @@ term_input.addEventListener("keydown", function(event) {
 
 
 function commands(cmd) {
-    term_output.innerHTML = term_output.innerHTML + "<p>" + cmd + "</p>";
+    term_output.innerHTML = term_output.innerHTML + "<p>local_user@kkonaog.github.io >" + cmd + "</p>";
     if (cmd == "help") {
         term_output.innerHTML = term_output.innerHTML + "<p>Commands: help, projects, clear</p>"
     } else if (cmd == "projects") {
-        term_output.innerHTML = term_output.innerHTML + "<p>Active Projects: <a href='dissection.html'>Electronics Dissection</a></p>"
+        term_output.innerHTML = term_output.innerHTML + "<p>Active Projects: <a href='projects/dissection.html'>Electronics Dissection</a></p>"
     } else if (cmd == "clear") {
         term_output.innerHTML = "";
     } else {
