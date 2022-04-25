@@ -1,0 +1,89 @@
+html {
+    font-family: monospace;
+}
+
+body {
+    background: #000;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    color: green;
+}
+
+h1 {
+    display: inline;
+}
+
+nav {
+    position:sticky;
+    overflow:hidden;
+}
+
+div {
+    padding:5px;
+    margin:5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    border-top:1px solid green;
+    border-bottom: 1px solid green;
+}
+
+ul > li {
+    float: left;
+    border:1px solid green;
+    border-top:none;
+    border-bottom:none;
+}
+
+ul > li:first-child {
+    border-left: 1px solid green !important;
+}
+
+ul > li:nth-child(odd) {
+    border-left:none;
+    border-right:none;
+}
+
+#title {
+    float:right;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: bold;
+    font-size:16px;
+    border:none;
+}
+
+ul > li a {
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+h1 > a {
+    color: green;
+}
+ol > li a {
+    color: green;
+}
+
+ol > li a:hover {
+    color: white;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+div > img {
+    width:375px;
+}
