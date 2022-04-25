@@ -1,4 +1,5 @@
-  <!-- Navbar -->
+ <header>
+ <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
       <button
@@ -30,4 +31,5 @@
       </div>
     </div>
   </nav>
+  </header>
   <!-- Navbar -->
