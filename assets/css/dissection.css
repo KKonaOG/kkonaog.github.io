@@ -1,5 +1,11 @@
 html {
     font-family: monospace;
+    font-size:16px;
+}
+
+a:hover {
+  color:white;
+  text-decoration:underline;
 }
 
 body {
@@ -7,7 +13,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    color: green;
+    color: lightgreen;
 }
 
 h1 {
@@ -17,11 +23,15 @@ h1 {
 nav {
     position:sticky;
     overflow:hidden;
-}
+border-right: 1px solid lightgreen;}
 
 div {
     padding:5px;
     margin:5px;
+}
+
+div > p {
+    line-height: 2;
 }
 
 ul {
@@ -30,19 +40,19 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: none;
-    border-top:1px solid green;
-    border-bottom: 1px solid green;
+    border-top:1px solid lightgreen;
+    border-bottom: 1px solid lightgreen;
 }
 
 ul > li {
     float: left;
-    border:1px solid green;
+    border:1px solid lightgreen;
     border-top:none;
     border-bottom:none;
 }
 
 ul > li:first-child {
-    border-left: 1px solid green !important;
+    border-left: 1px solid lightgreen !important;
 }
 
 ul > li:nth-child(odd) {
@@ -53,7 +63,7 @@ ul > li:nth-child(odd) {
 #title {
     float:right;
     display: block;
-    color: green;
+    color: lightgreen;
     text-align: center;
     padding: 12px 16px;
     font-weight: bold;
@@ -63,20 +73,17 @@ ul > li:nth-child(odd) {
 
 ul > li a {
     display: block;
-    color: green;
+    color: lightgreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 h1 > a {
-    color: green;
+    color: lightgreen;
 }
 ol > li a {
-    color: green;
-}
-
-ol > li a:hover {
-    color: white;
+    color: lightgreen;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -86,4 +93,13 @@ li a:hover {
 
 div > img {
     width:375px;
+    display:block;
+}
+
+#selected {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  left:50%;
 }
