@@ -8,6 +8,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a {
+    color: lightgreen;
+}
+
 bg {
     background-image: url('https://th.bing.com/th/id/OIP.QWO-G6V6iko3WsZQt1BmOQHaFj?pid=ImgDet&rs=1');
     background-repeat: no-repeat;
@@ -101,8 +105,12 @@ ol>li a {
 }
 
 div>img {
-    width: 375px;
+    width: 35%;
     display: block;
+}
+
+div > img:hover {
+    cursor: pointer;
 }
 
 #selected {
@@ -111,4 +119,37 @@ div>img {
     margin-right: auto;
     width: 50%;
     left: 50%;
+}
+
+table, th, td {
+    border: 1px solid lightgreen;
+    border-collapse:collapse;
+    text-align:center;
+    font-size: 15px;
+}
+
+thead {
+    background: lightgreen;
+}
+
+thead th {
+    border: 1px solid black;
+    color: black;
+}
+
+thead th:first-child {
+    border-left:none;
+}
+
+thead th:last-child {
+    border-right:none;
+}
+
+tr:hover {
+    background:#90ee9040
+}
+
+td:hover {
+    color:white;
+    background:#90ee9040
 }

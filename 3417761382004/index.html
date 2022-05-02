@@ -1,0 +1,728 @@
+<html lang="en-US"><head>
+    <title>Electronics Dissection</title>
+    <link rel="stylesheet" type="text/css" href="css/dissection.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#intro">I. Introduction</a></li>
+            <li><a href="#product_info">II. Product Information</a></li>
+            <li><a href="#photo_journal">III. Photo Journal</a></li>
+            <li><a href="#product_operation">IV. Product Operation</a></li>
+            <li><a href="#product_analysis">V. Product Analysis</a></li>
+            <li><a href="#product_reassembly">VI. Product Reassembly</a></li>
+            <li><a href="#product_lessons_learned">VII. Lessons Learned</a></li>
+
+        </ul>
+    </nav>
+    <br>
+    <div id="intro">
+        <h1>&gt; </h1>
+        <h1><a href="#intro">Introduction</a></h1>
+        <p>My name is Kyler Farrar, and I am majoring in Computer Engineering at Mississippi State University! As part
+            of ECE 4723 (Embedded Systems), we are tasked to perform a dissection of an electronic product.
+            The product I chose to dissect is the Tiny Touch Tablet by VTech Industries. The reason I chose this product
+            is
+            primarily for three reasons: larger circuit board, multiple input technologies, and (due to its large size)
+
+            an easier reassembly process. The device itself features one trackball, nine touch buttons, a volume control
+            switch, and auto-off functionality. All of these make a
+            seemingly "simple" electronic toy interestingly complex!
+            The rest of this website is dedicated to documenting the results of the dissection. Primarily it will
+            include:</p>
+        <ol>
+            <li><a href="#product_info">Product Information</a></li>
+            <li><a href="#photo_journal">A Photo Journal</a></li>
+            <li><a href="#product_operation">Product Operation Details</a></li>
+            <li><a href="#product_analysis">A Product Analysis</a></li>
+            <li><a href="#product_reassembly">Reassembly Procedures</a></li>
+            <li><a href="#product_lessons_learned">Lessons Learned</a></li>
+        </ol>
+
+
+    </div>
+    <div id="product_info">
+        <h1>&gt; </h1>
+        <h1><a href="#product_info">Product Information</a></h1>
+        <h2># Product History</h2>
+        <p>VTech is regarded as one of the largest manufacturers of retail cordless telephones in both the commercial
+            and residential fields. Founded in 1976 by Chi-Yun and Stephen Leung, the companies initial interests
+            involved video game development, even releasing a TV game console version of Pong. After minor success in
+            the video game industry, VTech started to move into electronic learning products in February of 1980 with a
+            product called the Lesson One. The goal of Lesson One was to teach children the basics of spelling and
+            mathematics. The following years involved VTechs investigations in other markets of potential profits, even
+            the personal computer market. In 1985, VTech began the development on the first iterations of a cordless
+            telephone, which was later introduced in 1991 as the world’s first fully digital cordless telephone. VTech’s
+            primary industries, as a result, are in cordless telephones (and related technologies/accessories) and
+            electronic learning products. An interesting anecdote is that VTech was among the first businesses to
+            attempt to tackle the concept of electronic learning products. </p>
+        <h2># Vendors and Pricing</h2>
+        <p>UPC Code: <a href="https://upcitemdb.com/upc/3417761382004">3 417761 382004</a></p>
+        <p>Official Vendors:</p>
+        <ol>
+            <li><a href="https://www.walmart.com/ip/VTech-Tiny-Touch-Tablet-Toy-Tablet-Learning-Toy-for-Babies/21007433">Walmart</a>:
+                $13.97</li>
+        </ol>
+        <p>Aftermarket Vendors:</p>
+        <ol>
+            <li>Ebay: $11.22</li>
+        </ol>
+        <h2># Alternative Products</h2>
+        <p>Currently VTech sells a multitude of similar "tablet" like children's toys, for example: </p>
+        <ol>
+            <li><a href="https://www.vtechkids.com/product/detail/19932/ABC_Learning_Apple">ABC Learning Apple</a></li>
+            <li><a href="https://www.vtechkids.com/product/detail/13336/Touch_and_Swipe_Baby_Phone">Touch &amp; Swipe
+                    Baby
+                    Phone</a></li>
+            <li><a href="https://www.vtechkids.com/product/detail/13350/Little_Apps_Tablet">Little Apps Tablet</a></li>
+        </ol>
+        <p>Leap Frog, a competing children's toy manufacturer, also has similar products: </p>
+        <ol>
+            <li><a href="https://store.leapfrog.com/en-us/store/p/blues-clues-skidoo-abc-book-blue/_/A-prod80-610600">Blue's Clues & You! Skidoo Intro ABCs Book</a></li>
+            <li><a href="https://store.leapfrog.com/en-us/store/p/blues-clues-clue-into-words/_/A-prod80-611800">Blue's Clues & You! Clue Into Words</a></li>
+        </ol>
+    </div>
+    <div id="photo_journal">
+        <h1>&gt; </h1>
+        <h1><a href="#photo_journal">Photo Journal</a></h1><br>
+        <h2># Retail Packaging</h2>
+        <img src="images/dissection_journal/IMG_1715.JPEG" id="">
+        <h2># Retail Packaging Pt. 2</h2>
+        <img src="images/dissection_journal/IMG_1716.JPEG" id="">
+        <h2># Product</h2>
+        <img src="images/dissection_journal/IMG_1717.JPEG">
+        <h2># Removal of Battery Cover</h2>
+        <img src="images/dissection_journal/IMG_1718.JPEG">
+        <h2># Removal of Pre-included Batteries</h2>
+        <img src="images/dissection_journal/IMG_1719.JPEG">
+        <h2># Removal of 6 Backplate Screws (One is inside battery compartment)</h2>
+        <img src="images/dissection_journal/IMG_1720.JPEG">
+        <h2># Product with Backplate Removed</h2>
+        <img src="images/dissection_journal/IMG_1721.JPEG">
+        <h2># Removal of Speaker Assembly from Backplate (1 Screw)</h2>
+        <img src="images/dissection_journal/IMG_1722.JPEG">
+        <h2># Removal of PCB from Frontplate (2 Screws)</h2>
+        <p>In removing the PCB, you can then remove all buttons and the volume/power switch.</p>
+        <img src="images/dissection_journal/IMG_1896.JPEG">
+        <h2># Removal of Trackball Assembly (3 Screws)</h2>
+        <p>At this point all components are removed from the frontplate.</p>
+        <img src="images/dissection_journal/IMG_1723.JPEG">
+        <h2># Backside of PCB</h2>
+        <img src="images/dissection_journal/IMG_1724.JPEG">
+        <h2># Frontside of PCB</h2>
+        <img src="images/dissection_journal/IMG_1725.JPEG">
+    </div>
+    <div id="product_operation">
+        <h1>&gt; </h1>
+        <h1><a href="#product_operation">Product Operation</a></h1>
+        <p>Please be aware, blocks with a * next to the information has a related video. These videos either discuss or demonstrate the item.
+            These videos are available <a href="videos/dissection_journal/">here</a>.
+        </p> 
+        <h2># Main Product Flow Diagram</h2>
+        <img src="images/dissection_journal/main_flow_diagram.png">
+        <h2># Trackball Flow Diagram</h2>
+        <img src="images/dissection_journal/trackball_flow_diagram.png">
+        <h2># Button Flow Diagram</h2>
+        <img src="images/dissection_journal/button_flow_diagram.png">
+        <h2># Speaker Output Waveform</h2>
+        <video width="530" height="315" src="videos/dissection_journal/IMG_1876.MOV">Browser does not support video (or video file type).</video>
+        <h2># Trackball Rotation Output Waveform</h2>
+        <p>The trackball assembly consists of a metal circle and several thin/flexible copper filaments. These filaments generate voltages on the metal circle when the trackball is rotated. The MCU detects this and plays the appropriate sound, depending on which assembly is generating the change in voltage.</p>
+        <video width="530" height="315" src="videos/dissection_journal/IMG_1878.MOV">Browser does not support video (or video file type).</video>
+        <h2># Button Waveform (Unpressed)</h2>
+        <p>Due to the wiring situation, I could not demonstrate a button press and also record the wavefrom data. These buttons work by shorting two contacts together when the button is pressed. Thusly the waveform you see below will become a uniform voltage (near 0V) when pressed. The MCU detects this (after some debouncing) and plays the appropriate sound for the button.</p>
+        <img src="images/dissection_journal/IMG_1897.JPEG">
+    </div>
+    <div id="product_analysis">
+        <h1>&gt; </h1>
+        <h1><a href="#product_analysis">Product Analysis</a></h1>
+        <h2># High Level Block Diagram</h2>
+        <p>The device has two buttons for each action even though only one is ever used. This is likely due to the PCB being used for multiple products.</p>
+        <img src="images/dissection_journal/high_level_block_design.png">
+        <h2># Product Schematic</h2>
+        <p>Please keep in mind this is a best guess schematic (meaning damage to the board was avoided), thusly some connections randomly terminate.</p>
+        <p>PDF Format Available Here(for easier reading): <a href="misc/board_schematic.pdf">Download PDF</a></p>
+        <img src="images/dissection_journal/board_schematic.png">
+        <h2># Product Weights </h2>
+        <table>
+            <thead>
+                <th>Part</th>
+                <th>Weight (grams)</th>
+                <th>Count</th>
+                <th>Total Weight (grams)</th>
+            </thead>
+            <tr>
+                <td>Front Plate</td>
+                <td>50</td>
+                <td>1</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Back Plate</td>
+                <td>54</td>
+                <td>1</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>PCB</td>
+                <td>19</td>
+                <td>1</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Speaker</td>
+                <td>12</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Rollerball Assembly</td>
+                <td>12</td>
+                <td>1</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Rollerball</td>
+                <td>6</td>
+                <td>1</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Speaker Clamp</td>
+                <td>2</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Buttons</td>
+                <td>1</td>
+                <td>9</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Silcone Button Caps</td>
+                <td>0.2</td>
+                <td>18</td>
+                <td>3.6</td>
+            </tr>
+            <tr>
+                <td>Volume Switch</td>
+                <td>0.35</td>
+                <td>1</td>
+                <td>0.35</td>
+            </tr>
+            <tr>
+                <td>Total Weight</td>
+                <td>-</td>
+                <td>-</td>
+                <td>171.45 grams (Assembled Weight: 174 grams)</td>
+            </tr>
+        </table>
+        <h2># Product Bill of Materials</h2>
+        <h3># Resistors (includes jumpers since VTech used 0hm resistors as jumpers)</h3>
+        <table>
+            <thead>
+                <th>Board Label</th>
+                <th>Resistance</th>
+                <th>Available At</th>
+                <th>Cost (non-bulk)</th> 
+                <th>Notes</th>
+            </thead>
+            <tr>
+                <td>R1</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R2</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>R2 is used as a jumper on this product, PCB is likely used on mulitple products</td>
+            </tr>
+            <tr>
+                <td>R3</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>R3 is used as a jumper on this product, PCB is likely used on mulitple products</td>
+            </tr>
+            <tr>
+                <td>R4</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>R4 is used as a jumper on this product, PCB is likely used on mulitple products</td>
+            </tr>
+            <tr>
+                <td>R5</td>
+                <td>4.7 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/SG73P1EWTTP4R7J?qs=Jslch3jnSjltz76Q55SY9Q%3D%3D">Mouser</a></td>
+                <td>$0.23 per Unit</td>
+                <td>R5 was measured as 5.3, but used the symbology for 4.7. The resistor selected reflects a 5% tolerance difference for this reason</td>
+            </tr>
+            <tr>
+                <td>R6</td>
+                <td>15 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/SG73P1EWTTP15R0F?qs=ljCeji4nMDkB5ootSV2UxA%3D%3D">Mouser</a></td>
+                <td>$0.17 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R7</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>R7 is used as a jumper on this product, PCB is likely used on mulitple products</td>
+            </tr>
+            <tr>
+                <td>R8</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R9</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R10</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R11</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R12</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R13</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R14</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R15</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>R16</td>
+                <td>101 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/KOA-Speer/RN732BTTD1010D25?qs=sGAEpiMZZMtlubZbdhIBICY6twk7cuhvK9%252Bq70oEf%252Bs%3D">Mouser</a></td>
+                <td>$0.58 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J1</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J2</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J3</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J4</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J5</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J6</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>Under epoxy (or not present)</td>
+            </tr>
+            <tr>
+                <td>J7</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J8</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J9</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J10</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J11</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J12</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J13</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J14</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>Under exoxy (or not present)</td>
+            </tr>
+            <tr>
+                <td>J15</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J16</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J17</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J18</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J19</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>J20</td>
+                <td>0 Ohms</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCU0805MZ0000ZP500?qs=sGAEpiMZZMtlubZbdhIBICVDlh%2FK6OJpChuI%252BlBt3A4%3D">Mouser</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+        </table>
+        <p>Total Resistor Costs: $14.60
+            (It is important to keep in mind that since they buy in bulk, this will drive the cost down significantly)
+        </p>
+        <h3># Capacitors</h3>
+        <table>
+            <thead>
+                <th>Board Label</th>
+                <th>Farads</th>
+                <th>Available At</th>
+                <th>Cost</th> 
+                <th>Notes</th>
+            </thead>
+            <tr>
+                <td>C1</td>
+                <td>100 µF</td>
+                <td><a href="https://www.digikey.com/en/products/detail/nichicon/UPW1A101MDD/589477">Digi-Key</a></td>
+                <td>$0.35 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>C2</td>
+                <td>110 nF</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Kyocera-AVX/12065C114JAT2A?qs=92ej8Jla8sxsxuBN6LxSug%3D%3D">Mouser</a></td>
+                <td>$0.54 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>C3</td>
+                <td>110 nF</td>
+                <td><a href="https://www.mouser.com/ProductDetail/Kyocera-AVX/12065C114JAT2A?qs=92ej8Jla8sxsxuBN6LxSug%3D%3D">Mouser</a></td>
+                <td>$0.54 per Unit</td>
+                <td>None</td>
+            </tr>
+        </table>
+        <p>Total Capacitor Costs: $1.43
+            (It is important to keep in mind that since they buy in bulk, this will drive the cost down significantly)
+        </p>
+        <h3># Diodes</h3>
+        <table>
+            <thead>
+                <th>Board Label</th>
+                <th>Color</th>
+                <th>Available At</th>
+                <th>Cost</th> 
+                <th>Notes</th>
+            </thead>
+            <tr>
+                <td>D1</td>
+                <td style="background-color: red;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C250KRKT/4307976">Digi-Key</a></td>
+                <td>$0.05120 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D2</td>
+                <td style="background-color: yellow;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/venkel/CTL0603FYW1T/13245058">Digi-Key</a></td>
+                <td>$0.04454 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D3</td>
+                <td style="background-color: red;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C250KRKT/4307976">Digi-Key</a></td>
+                <td>$0.05120 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D4</td>
+                <td style="background-color: yellow;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/venkel/CTL0603FYW1T/13245058">Digi-Key</a></td>
+                <td>$0.04454 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D5</td>
+                <td style="background-color: red;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C250KRKT/4307976">Digi-Key</a></td>
+                <td>$0.05120 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D6</td>
+                <td style="background-color: yellow;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/venkel/CTL0603FYW1T/13245058">Digi-Key</a></td>
+                <td>$0.04454 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D7</td>
+                <td style="background-color: red;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C250KRKT/4307976">Digi-Key</a></td>
+                <td>$0.05120 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D8</td>
+                <td style="background-color: yellow;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/venkel/CTL0603FYW1T/13245058">Digi-Key</a></td>
+                <td>$0.04454 per Unit</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>D9</td>
+                <td style="background-color: red;"></td>
+                <td><a href="https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C250KRKT/4307976">Digi-Key</a></td>
+                <td>$0.05120 per Unit</td>
+                <td>None</td>
+            </tr>
+        </table>
+        <p>Total LED Costs: $0.44 (It is important to keep in mind that since they buy in bulk, this will drive the cost down significantly)</p>
+        <h3># Fuses</h3>
+        <table>
+            <thead>
+                <th>Board Label</th>
+                <th>Rated Amperage</th>
+                <th>Available At</th>
+                <th>Cost</th> 
+                <th>Notes</th>
+            </thead>
+            <tr>
+                <td>F1</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>F1 is not present on the board, PCB is likely used on multiple products</td>
+            </tr>
+            <tr>
+                <td>F2</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>F2 is not present on the board, PCB is likely used on multiple products</td>
+            </tr>
+            <tr>
+                <td>F3</td>
+                <td>125 mA</td>
+                <td><a href="https://www.digikey.com/en/products/detail/littelfuse-inc/0466-125WR/2520393">Digi-Key</a></td>
+                <td>$0.41715</td>
+                <td>125mA is a best guess. The board draws at max draw 100mA, thusly 125mA seems to be a reasonable fuse rating.</td>
+            </tr>
+        </table>
+        <p>Total Fuse Costs: $0.41715 (It is important to keep in mind that since they buy in bulk, this will drive the cost down significantly)</p>
+        <h3># Miscellaneous</h3>
+        <table>
+            <thead>
+                <th>Part or Board Label</th>
+                <th>Available At</th>
+                <th>Cost</th> 
+                <th>Notes</th>
+            </thead>
+            <tr>
+                <td>Speaker</td>
+                <td><a href="https://www.mouser.com/ProductDetail/CUI-Devices/CLS0201MA-L152?qs=WyjlAZoYn52yoRnHQzEFHQ%3D%3D">Mouser</a></td>
+                <td>$4.03</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Volume/Power Switch</td>
+                <td><a href="https://www.digikey.com/en/products/detail/c-k/OS203011MV9QN1/1981429">Digi-Key</a></td>
+                <td>$0.87</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td>Plastic Casings and Parts</td>
+                <td>Unknown (Custom)</td>
+                <td>Unknown (Custom)</td>
+                <td>No reliable estimate could be found on cost for injection molded plastic (This category includes casings, trackball, trackball assembly, etc.)</td>
+            </tr>
+            <tr>
+                <td>Microcontroller</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>Epoxy covered the MCU, so I could not make a reliable determination without risking damage to the product</td>
+            </tr>
+            <tr>
+                <td>Silcone Button Caps</td>
+                <td>Unknown</td>
+                <td>Unknown</td>
+                <td>I could not find a matching product, however, they are likely no more than a few cents per unit</td>
+            </tr>
+        </table>
+        <p>Total Miscellaneous Costs: ~$4.90 (It is important to keep in mind that since they buy in bulk, this will drive the cost down significantly)</p>
+        <p>Total Estimated Product Costs: $21.35</p>
+        <p>I imagine the MCU and other unknown parts likely come out to add no more than $2 to $3 dollars ontop of the total cost of parts (when purchased in bulk). 
+            All other parts are also purchased and produced in bulk which drastically drives down prices. I believe it is easy to see that VTech is making
+            atleast around a 25% profit margin with the production of this toy.</p>
+        <h2># Electrical Characteristics</h2>
+        <table>
+            <thead>
+                <th>Characteristic</th>
+                <th>Value</th>
+            </thead>
+            <tr>
+                <td>Nominal Operating Voltage</td>
+                <td>3.0 V</td>
+            </tr>
+            <tr>
+                <td>Minimal Operating Voltage</td>
+                <td>2.4 V</td>
+            </tr>
+            <tr>
+                <td>Max Current Draw</td>
+                <td>0.1 A</td> 
+            </tr>
+            <tr>
+                <td>Idle Current Draw</td>
+                <td>0.0055 A</td>
+            </tr>
+            <tr>
+                <td>Battery Life at Max Current Draw (Please note that the device never actively stays at max current draw, but instead reaches the peak occasionally)</td>
+                <td>1 Hour</td>
+            </tr>
+            <tr>
+                <td>Battery Life at Idle Current Draw</td>
+                <td>18.18 Hours</td>
+            </tr>
+        </table>
+    </div>
+    <div id="product_reassembly">
+        <h1>&gt; </h1>
+        <h1><a href="#product_reassembly">Product Reassembly</a></h1>
+        <p>I opted to do a video showing the reconstruction process, this way I could explain some of the intricacies of the product.</p>
+        <h2># Reconstruction with Commentary</h2>
+        <video width="560" height="315" src="videos/dissection_journal/dissection_with_comments.mp4">Browser does not support video (or video format).</video>
+        <h2># Reconstruction without Commentary</h2>
+        <video width="560" height="315" src="videos/dissection_journal/dissection_without_comments.mp4">Browser does not support video (or video format).</video>
+    </div>
+    <div id="product_lessons_learned">
+        <h1>&gt; </h1>
+        <h1><a href="#photo_journal">Lessons Learned</a></h1>
+        <p>Overall, I learned a LOT from this project. Probably the biggest skill advancements were that in PCB analysis techniques and increased proficiency in KiCad (the schematic creation software). One more interesting fact I learned that it is not uncommon to reuuse PCBs in multiple products. I also learned that companies will use 0 Ohm resistors in place of traces in order to decrease the complexity of routing! The biggest take away I have had, is that, even though a product seems extremely straight forward, it can still be suprisingly complex in its implementation. I imagine the reason the schematic/PCB design for this product was so complex was to cut costs and maximize productivity.</p>
+        <P>Thanks for Reading!</P>
+    </div>
+
+    <footer>
+        <script type="text/javascript" src="js/term_emulation.js"></script>
+    </footer>
+
+
+
+
+</body></html>

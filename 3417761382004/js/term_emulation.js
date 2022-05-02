@@ -7,6 +7,15 @@ for(var k = 0; k < imgs.length; k++){
     img.addEventListener("click", imgClicked)
 }
 
+
+var videos = document.getElementsByTagName("video");
+for (var k = 0; k < videos.length; k++) {
+    var video = videos.item(k);
+    video.controls = true;
+}
+
+
+
 if (term_input != null) {
  term_input.addEventListener("keydown", function(event) {
     if (event.key == "Enter") {

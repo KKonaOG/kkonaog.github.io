@@ -1,1 +1,0 @@
-# kkonaog.github.io
